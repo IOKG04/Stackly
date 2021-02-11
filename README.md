@@ -18,15 +18,15 @@ Commands:
  
  InC (Stack)                     | Get's Input as a Character and pushes its AscII-Value onto (Stack)
  
- OutN (Stack)                    | Pop's the top value of (Stack) and Output's it as a Number
+VOutN (Stack)                    | Pop's the top value of (Stack) and Output's it as a Number
  
- OutC (Stack)                    | Pop's the top value of (Stack) and Output's the AscII-Charater coresponding to the Poped value
+VOutC (Stack)                    | Pop's the top value of (Stack) and Output's the AscII-Charater coresponding to the Poped value
  
  Pop (Stack 1) (Stack 2)         | Pop's the top value of (Stack 1) and Pushes it onto (Stack 2)
  
  Peek (Stack 1) (Stack 2)        | Peek's the top value of (Stack 1) and Pushes it onto (Stack 2)
  
- Push (Stack) (Value)            | Pushes (Value) onto (Stack)
+VPush (Stack) (Value)            | Pushes (Value) onto (Stack)
  
  PopA (Stack 1) (Stack 2)        | Pop's the top value of (Stack 1) and (Stack 2) and Pushes the result of '(first value) + (second value)' onto (Stack 1)
  
@@ -48,6 +48,6 @@ Commands:
  
  Rtrn (Stack)                    | Pop's the top value of (Stack) and Jump's to it
  
- Stp                             | Stop's the execution
+VStp                             | Stop's the execution
 
 (The Commands don't have to be capitalised)
