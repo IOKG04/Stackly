@@ -47,5 +47,7 @@ Commands:
  GSub (Line) (Stack)             | Pushes the current Line onto (Stack) and Jump's to (Line)
  
  Rtrn (Stack)                    | Pop's the top value of (Stack) and Jump's to it
+ 
+ Stp                             | Stop's the execution
 
 (The Commands don't have to be capitalised)
