@@ -4,7 +4,7 @@ Stackly is an essoteric Programming Language I'm programming in c#.
 
 Data is stored using 3 Stacks.
 
-The Synatx is '(Command) (Argument 1) (Argument 2) (Argument ...);'.
+The Synatx is '(Command) (Argument 1) (Argument 2) (Argument ...)'. Every Command takes up one Line. You can't put more than one Command in one Line.
 
 You can use the Stacks and the Queue using 'A' (Stack 1), 'B' (Stack 2) and 'C' (Stack 3).
 
