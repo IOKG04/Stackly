@@ -1,5 +1,7 @@
 # Stackly
 
+(Note: The Interpreter is for Windows 10. If you want to use it on Linux or Mac: Download the Master version and compile Program.cs)
+
 Stackly is an essoteric Programming Language I'm programming in c#.
 
 Data is stored using 3 Stacks.
