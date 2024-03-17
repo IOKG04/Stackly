@@ -26,9 +26,11 @@ int stack_resize(stack *st){
     return 0;
 }
 
-void stack_free(stack *st){
+inline void stack_clean(stack *st){
     free(st->bottom);
-    free(st);
+    st->bottom = NULL;
+    st->top = NULL;
+    st->size = 0;
 }
 
 void stack_push(stack *st, s32 v){
@@ -38,11 +40,12 @@ void stack_push(stack *st, s32 v){
     *(st->top) = v;
 }
 
-s32 stack_peek(stack *st){
+inline s32 stack_peek(stack *st){
+    if(st->top == st->bottom) return 0;
     return *(st->top);
 }
 
-s32 stack_pop(stack *st){
+inline s32 stack_pop(stack *st){
     if(st->top == st->bottom) return 0;
     return *((st->top)--);
 }

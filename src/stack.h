@@ -4,7 +4,6 @@
 #include <stdint.h>
 
 #define STACK_DEFAULT_SIZE (u32)1
-#define STACK_CREATE(st) st = malloc(sizeof(stack)); stack_create(st);
 
 typedef int32_t  s32;
 typedef uint32_t u32;
@@ -20,8 +19,9 @@ int stack_create(stack *st);
 //  0 : success
 // -1 : failed to allocate new array
 int stack_resize(stack *st);
-void stack_free(stack *st);
+void stack_clean(stack *st);
 void stack_push(stack *st, s32 v);
+// returns 0 on empty stack
 s32 stack_peek(stack *st);
 // returns 0 on empty stack
 s32 stack_pop(stack *st);
