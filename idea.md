@@ -3,10 +3,9 @@
 ### Truth machiene
 
 ```
-;0![d:]:
+;d[dd:]:q
 
 ;       get input as number
-!       not operator (0 -> 1, else -> 0)
 [...]   repeat while top value != 0 (peek)
 d       duplicate
 :       output top as number (pop)
@@ -33,3 +32,4 @@ r       return from function (needed as functions do not end)
 ...)    assign label
 [...]   repeat while top != 0 (peek)
 {...}   execute if top != 0 (peek)
+!       not operator (0 -> 1, else -> 0)
